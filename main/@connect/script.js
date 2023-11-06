@@ -14625,7 +14625,7 @@ var Qae = JM((Boe, _1) => {
             directory: "pp4/survivetheinternet",
             categoryId: "STIGame"
         }, {
-            name: "Monster Seeking Monster",
+            name: "Ясо ищет Шона",
             tag: "monstermingle",
             wrapper: "marionette",
             isPublic: !0,
@@ -14776,7 +14776,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "DrawfulAnimateGame",
             features: ["moderation"]
         }, {
-            name: "The Wheel of Enormous Proportions",
+            name: "Пельмень Невероятных Масштабов",
             tag: "the-wheel",
             wrapper: "vue",
             isPublic: !0,
@@ -14872,7 +14872,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TeeKO2Game",
             galleryId: "teeko2"
         }, {
-            name: "Dodo Re Mi",
+            name: "Додо Ре Ми",
             tag: "nopus-opus",
             wrapper: "vue",
             isPublic: !0,
@@ -20736,7 +20736,7 @@ var Qae = JM((Boe, _1) => {
             OK: "OK",
             NEXT: "Next",
             NO: "No",
-            PLAY: "Play",
+            PLAY: "Играть",
             PUBLISH: "Publish",
             REMOVE: "Remove",
             RESET: "Reset",
@@ -31701,18 +31701,18 @@ ${e}`
             WAITING: "Waiting for Room"
         },
         one = {
-            ACCEPT_ALL: "Got it!",
+            ACCEPT_ALL: "Понял!",
             CONSENT_MODAL: {
                 ARIA: "Cookie consent form"
             },
-            DESCRIPTION: "We use cookies to improve your game experience and analyze website traffic. Find out more in our [pp]Privacy Policy[/pp].",
+            DESCRIPTION: "Мы используем куки-файлы для улучшения ваших игровых возможностей и анализа посещаемости сайта. Читайте больше в нашей [pp]Политике конфиденциальности[/pp].",
             REJECT_ALL: "Opt out"
         },
         lne = {
             UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-            ROOM_IS_FULL: "The game is full",
-            ROOM_NOT_FOUND: "Room not found",
-            AUDIENCE_IS_FULL: "The audience is full",
+            ROOM_IS_FULL: "Комната заполнена",
+            ROOM_NOT_FOUND: "Комната не найдена",
+            AUDIENCE_IS_FULL: "Зрители заполнены",
             UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
             UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
             KICKED: "You cannot join because you have been kicked by a moderator",
@@ -31723,72 +31723,72 @@ ${e}`
             FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
         },
         cne = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "ENTER YOUR NAME",
-            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-            PASSWORD_REQUIRED_TITLE: "Password required",
-            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-            ROOM_CODE: "ROOM CODE",
-            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+            NAME: "ИМЯ",
+            NAME_PLACEHOLDER: "ВВЕДИ СВОЁ ИМЯ",
+            PASSWORD_PLACEHOLDER: "ВВЕДИ 5-ЗНАЧНЫЙ ПАРОЛЬ",
+            PASSWORD_REQUIRED_TITLE: "Требуется пароль",
+            PASSWORD_REQUIRED_BODY: "Пожалуйста, введите пароль или присоединитесь как зритель",
+            PASSWORD_JOIN_AS_PLAYER: "Зайти как игрок",
+            PASSWORD_JOIN_AS_AUDIENCE: "Зайти как зритель",
+            ROOM_CODE: "КОД КОМНАТЫ",
+            ROOM_CODE_PLACEHOLDER: "ВВЕДИ 4-БУКВЕННЫЙ КОД"
         },
         une = "Link to Jackbox Games Homepage",
         fne = {
-            APPEARANCE: "APPEARANCE",
+            APPEARANCE: "ТЕМА",
             DARK: "dark",
-            HELP: "HELP",
+            HELP: "ПОМОЩЬ",
             TWITCH: "TWITCH",
             LIGHT: "light",
-            LOGOUT: "LOGOUT",
-            MERCH: "MERCH",
-            PAST_GAMES: "PAST GAMES",
-            MAILING_LIST: "MAILING LIST",
-            MODERATOR: "MODERATOR"
+            LOGOUT: "ВЫЙТИ",
+            MERCH: "МЕРЧ",
+            PAST_GAMES: "ПРОШЛЫЕ ИГРЫ",
+            MAILING_LIST: "СПИСОК РАССЫЛКИ",
+            MODERATOR: "МОДЕРАТОР"
         },
         dne = {
             CALL_TO_ACTION: {
-                SHOP: "VIEW GAME & SHOP",
-                VIEW: "VIEW THIS GAME"
+                SHOP: "ПОСМОТРЕТЬ ИГРУ & МАГАЗИН",
+                VIEW: "ПОСМОТРЕТЬ ЭТУ ИГРУ"
             },
-            NEW: "NEW",
-            PLAYED_ON: "PLAYED ON",
+            NEW: "НОВОЕ",
+            PLAYED_ON: "СЫГРАНО",
             REMOVE: {
-                CONFIRM: "Are you sure?",
+                CONFIRM: "Вы уверены?",
                 DESCRIPTION: `This will permanently remove this game
 from your past games list.`,
-                MANAGE: "Remove Game?",
-                TITLE: "Are You Sure?"
+                MANAGE: "Удалить игру?",
+                TITLE: "Вы уверены?"
             }
         },
         pne = {
-            EMPTY: "No Past Games Yet",
-            MANAGE: "MANAGE",
-            TITLE: "YOUR PAST GAMES"
+            EMPTY: "Прошедших игр нет",
+            MANAGE: "УПРАВЛЯТЬ",
+            TITLE: "ВАШИ ПРОШЛЫЕ ИГРЫ"
         },
         hne = {
-            TITLE: "RECENT GAMES",
+            TITLE: "ПРОШЛЫЕ ИГРЫ",
             VIEW_ALL: {
-                BUTTON: "VIEW ALL",
-                LINK: "VIEW ALL PAST GAMES"
+                BUTTON: "ПОСМОТРЕТЬ ВСЕ",
+                LINK: "ПОСМОТРЕТЬ ВСЕ ПРОШЛЫЕ ИГРЫ"
             }
         },
         mne = {
-            GAME_FULL: "Game is full",
-            GAME_STARTED: "Game has started",
-            ROOM_NOT_FOUND: "Room not found"
+            GAME_FULL: "Комната заполена",
+            GAME_STARTED: "Игра уже началась",
+            ROOM_NOT_FOUND: "Комната не найдена"
         },
         gne = {
-            GAME_FULL: "GAME IS FULL",
-            GAME_STARTED: "GAME HAS STARTED",
-            JOIN_AUDIENCE: "JOIN AUDIENCE",
-            RECONNECT: "RECONNECT",
-            TWITCH_LOGIN: "LOGIN WITH TWITCH"
+            GAME_FULL: "КОМНАТА ЗАПОЛЕНА",
+            GAME_STARTED: "ИГРА НАЧАЛАСЬ",
+            JOIN_AUDIENCE: "ЗАЙТИ КАК ЗРИТЕЛЬ",
+            RECONNECT: "ПЕРЕЗАЙТИ",
+            TWITCH_LOGIN: "ВХОД С TWITCH"
         },
         vne = {
             CAMERA: "[b]HEADS UP:[/b] We’re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
             STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-            TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
+            TOS: "Нажимая {submit}, вы соглашаетесь с нашими [tos]Условиями обслуживания[/tos]"
         },
         _ne = {
             BRANCH: ane,
