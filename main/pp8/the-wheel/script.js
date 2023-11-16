@@ -27868,66 +27868,66 @@ ${e}`
                 })
             })
         },
-        Lce = "ASK",
-        Mce = "You have used a word The Wheel does not approve of. Please try again.",
-        Pce = "NO",
-        kce = "OR",
-        Nce = "SEND",
-        Rce = "SUBMIT",
-        Dce = "WAIT TO TRY AGAIN",
-        Bce = "UNDO",
-        Fce = "YES",
+        Lce = "WHO ASK",
+        Mce = "Вы использовали слово, которое нарушает Завет Твича. Пожалуйста, не нарушай их.",
+        Pce = "НЕТ",
+        kce = "ИЛИ",
+        Nce = "ОТПРАВИТЬ",
+        Rce = "ГОТОВО",
+        Dce = "ТЫ ЗАБАНЕН!",
+        Bce = "ВЕРНУТЬ",
+        Fce = "ДА",
         Uce = {
-            NAME: "THE AUDIENCE",
-            VOTE_NOW: "VOTE NOW",
-            THANKS: ["Thank you, dear audience.", "Every vote counts. Even yours!", "I thank you with all my enormity.", "I bestow upon you my deepest gratitude.", "Many thanks. I won't forget this."]
+            NAME: "ЗРИТЕЛИ",
+            VOTE_NOW: "ГОЛОСУЙТЕ",
+            THANKS: ["Спасибо вам, дорогая аудиенция.", "В отличии от игроков, зрители никогда не подводят меня.", "Благодарю, судари.", "Спасибо.", "Я знал, что вы лучше, чем игроки"]
         },
         zce = {
-            BANNER: "WHAT AM I THINKING?",
-            INCORRECT: "TRY AGAIN",
-            CORRECT: "GOT IT",
-            PLACEHOLDER: "Enter A Guess"
+            BANNER: "БИТВА ЭКСТРАСЕКСОВ",
+            INCORRECT: "ПОПРОБУЙ СНОВА",
+            CORRECT: "УГАДАНО",
+            PLACEHOLDER: "Введите предположение"
         },
         Gce = {
-            BANNER: "COUNTERPARTS",
-            CORRECT: "MATCH",
-            FROZEN: "INCORRECT"
+            BANNER: "СОПОСТАВЛЕНИЯ",
+            CORRECT: "ВЕРНО",
+            FROZEN: "НЕВЕРНО"
         },
         jce = {
-            BANNER: "ENUMERATE"
+            BANNER: "ЧИСЛА"
         },
         Wce = {
-            PLACE: "PLACE YOUR SLICES",
-            SUBMIT: "DONE! PRESS SUBMIT",
-            THANKS: "NICE JOB"
+            PLACE: "ВСТАВЬ СВОИ БОЛЬШИЕ СЕКТОРА",
+            SUBMIT: "ГОТОВО! НАЖМИ ГОТОВО",
+            THANKS: "АГА."
         },
         Vce = {
-            BANNER: "WELCOME",
-            PLACEHOLDER: "Enter A Question"
+            BANNER: "ЗДАРОВА",
+            PLACEHOLDER: "Введите вопрос"
         },
         Kce = {
-            BANNER: "THAT [small]OR[/small] THIS",
-            CORRECT: "CORRECT",
-            FROZEN: "INCORRECT"
+            BANNER: "ТО [small]ДА[/small] СЁ",
+            CORRECT: "ВЕРНО",
+            FROZEN: "НЕВЕРНО"
         },
         qce = {
-            ANSWER_BANNER: "YOU WIN!",
-            MAIN_BANNER: "SPIN [small]THE[/small] WHEEL",
-            RAINBOW_BANNER: "RAINBOW WHEEL",
-            WIN_BANNER: "FOR [small]THE[/small] WIN"
+            ANSWER_BANNER: "ТЫ ПОБЕДИЛ!",
+            MAIN_BANNER: "КРУТИ [small]КОЛЮ[/small]",
+            RAINBOW_BANNER: "РАДУГА",
+            WIN_BANNER: "ЗАКОНЧИ [small]ЭТУ[/small] ИГРУ"
         },
         Hce = {
-            OBJECTIVE_BANNER: "DON'T FORGET TO WRITE",
-            SUBJECTIVE_BANNER: "SUBJECTIVELY YOURS",
-            CORRECT: "GOOD",
-            TAKEN: "ANSWERED",
-            OBJECTIVE_INCORRECT: "WRONG",
-            SUBJECTIVE_INCORRECT: "NOPE",
-            PLACEHOLDER: "Enter A Guess"
+            OBJECTIVE_BANNER: "СУБЪЕКТЫ",
+            SUBJECTIVE_BANNER: "СУБЪЕКТЫ",
+            CORRECT: "ПРАВИЛЬНО",
+            TAKEN: "УЖЕ БЫЛО",
+            OBJECTIVE_INCORRECT: "НЕВЕРНО",
+            SUBJECTIVE_INCORRECT: "НЕТ",
+            PLACEHOLDER: "Введите предположение"
         },
         Yce = {
-            SPIN: '[player avatar="{avatar}"]{name}[/player] is the spinner',
-            MESSAGES: ["Remember... patience is a virtue.", "This is a blank screen. Or is it?", "Action awaits!", "Oh, the waiting. The waiting!", "Just wait till the next part!", "Hey, nice controller! Sorry, just making conversation.", "(Insert on-hold music here)", "Sit tight, little meeple.", "I believe in you. Shhh... don't tell anyone.", "It's about to get exciting in here.", "Nothing to see here.", "Behold... a screen with only these words on it.", "Property of the Wheel of Enormous Proportions", "The Wheel Was Here"]
+            SPIN: '[player avatar="{avatar}"]{name}[/player] крутит Колю',
+            MESSAGES: ["Помни, а то забудешь.", "Вау ты нашёл секретное сообщение! Тебя не должно было быть тут! Молодец! Вот это блять ты представлял? Это блять ты хотел найти сука когда написал ответ? Хмммм блять может создатели мода припрятали где-то секретку, просто надо будет её найти блять. Что ж, ты нашёл? Это не то, что ты хотел найти? Иди нахуй.", "Хуба буба.", "Помнишь террористы школу захватили в 2004 году? Моих рук дело. Лан шучу.", ".", "Обернись.", "мкекп5епе5ге5рре5гпе5гп", "Прив.", "Иди нахуй.", "Введите текст.", "Ахахахах смотри смешное видео https://youtu.be/Hyur4CIcf-U", "Perché tradotto", "Помогите.", "Иди играй, не отвлекайся."]
         },
         Xce = {
             ANSWER: "answer slice.",
