@@ -13140,34 +13140,34 @@ ${n.message}`,
             }
         },
         EW = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
+            DISCONNECTED: "Вы были отключены.",
+            DRAWING_NOTHING: "Нарисуйте что-нибудь!",
+            PLAYER_KICKED: "Вы были исключены из игры модератором.",
+            ROOM_DESTROYED: "Спасибо за игру!",
+            ROOM_DISCONNECTED: "Отключено",
             TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
             TEXT_NOTHING: "You can\u2019t enter nothing!",
             TITLE: "Error"
         },
         SW = "LOADING",
         TW = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "{count} из {maxPlayers} игроков присоединилось",
+            PLAYERS_NEEDED: "1 игрок нужен, чтобы начать | {count} игроков нужно, чтобы начать",
+            WAITING_FOR_VIP: "Ждём, когда {name} начнёт игру",
+            WAITING_FOR_GAMEPAD: "Ждём начала игры",
+            GAME_STARTING: "Игра начинается",
+            BUTTON_START: "Нажми, чтобы начать",
+            BUTTON_CANCEL: "Нажми, чтобы отменить"
         },
         wW = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Посетить галлерею",
+            PLAY_AGAIN: "Играть снова?",
+            BUTTON_SAME_PLAYERS: "Те же игроки",
+            BUTTON_NEW_PLAYERS: "Новые игроки"
         },
         CW = {
-            AND: "AND",
-            OR: "OR"
+            AND: "И",
+            OR: "ИЛИ"
         },
         $W = {
             BUTTON_SKIP: "Skip",
@@ -13175,7 +13175,7 @@ ${n.message}`,
             BUTTON_DONE: "Let\u2019s Go!"
         },
         OW = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         xW = {
             EPISODE_REPORT: "Report Episode",
@@ -13209,12 +13209,12 @@ ${n.message}`,
         },
         AW = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
+                SUBTEXT: "Вы успешно соединили свой аккаунт с Jackbox Audience Kit Twitch Extension.",
                 WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "ПЕРЕПОДКЛЮЧЕНО",
+                SUBTEXT: "Повеселитесь!"
             },
             RECONNECTING: {
                 CONTROLLER: {
