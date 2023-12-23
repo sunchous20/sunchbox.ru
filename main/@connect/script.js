@@ -46,7 +46,7 @@ var Qae = JM((Boe, _1) => {
         La = [],
         $n = () => {},
         QM = () => !1,
-        ZM = /^on[^a-z-а-я]/,
+        ZM = /^on[^a-z]/,
         cf = t => ZM.test(t),
         $m = t => t.startsWith("onUpdate:"),
         Zt = Object.assign,
@@ -77,7 +77,7 @@ var Qae = JM((Boe, _1) => {
         },
         r$ = /-(\w)/g,
         Zn = ff(t => t.replace(r$, (e, r) => r ? r.toUpperCase() : "")),
-        n$ = /\B([A-Z-А-Я])/g,
+        n$ = /\B([A-Z])/g,
         Ks = ff(t => t.replace(n$, "-$1").toLowerCase()),
         df = ff(t => t.charAt(0).toUpperCase() + t.slice(1)),
         hp = ff(t => t ? `on${df(t)}` : ""),
@@ -3236,7 +3236,7 @@ var Qae = JM((Boe, _1) => {
             }, e.map(n => i => !i._stopped && n && n(i))
         } else return e
     }
-    const jy = /^on[a-z-а-я]/,
+    const jy = /^on[a-z]/,
         mk = (t, e, r, n, i = !1, s, o, c, u) => {
             e === "class" ? nk(t, n, i) : e === "style" ? ik(t, r, n) : cf(e) ? $m(e) || ck(t, e, r, n, o) : (e[0] === "." ? (e = e.slice(1), !0) : e[0] === "^" ? (e = e.slice(1), !1) : gk(t, e, n, i)) ? ok(t, e, n, s, o, c, u) : (e === "true-value" ? t._trueValue = n : e === "false-value" && (t._falseValue = n), ak(t, e, n, i))
         };
@@ -11722,7 +11722,7 @@ var Qae = JM((Boe, _1) => {
     }
 
     function bu(t) {
-        return t === void 0 && (t = ""), t.replace(/-[a-z-а-я]/g, e => e.toUpperCase().replace("-", ""))
+        return t === void 0 && (t = ""), t.replace(/-[a-z]/g, e => e.toUpperCase().replace("-", ""))
     }
 
     function Z2(t) {
@@ -11876,7 +11876,7 @@ var Qae = JM((Boe, _1) => {
             if (this.rendered) return;
             this.calcSlideSlots();
             let e = this.cssStyles();
-            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-а-я-0-9.]*)\)/g, "$1")), e.length && x0(this.shadowRoot, e), this.cssLinks().forEach(n => {
+            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-0-9.]*)\)/g, "$1")), e.length && x0(this.shadowRoot, e), this.cssLinks().forEach(n => {
                 if (this.shadowRoot.querySelector(`link[href="${n}"]`)) return;
                 const s = document.createElement("link");
                 s.rel = "stylesheet", s.href = n, this.shadowRoot.appendChild(s)
@@ -11965,7 +11965,7 @@ var Qae = JM((Boe, _1) => {
             this.initialized && (r === "true" && n === null && (n = !1), this.updateSwiperOnPropChange(e, n))
         }
         static get observedAttributes() {
-            return Cf.filter(r => r.includes("_")).map(r => r.replace(/[A-Z-А-Я]/g, n => `-${n}`).replace("_", "").toLowerCase())
+            return Cf.filter(r => r.includes("_")).map(r => r.replace(/[A-Z]/g, n => `-${n}`).replace("_", "").toLowerCase())
         }
     }
     Cf.forEach(t => {
@@ -12841,8 +12841,8 @@ var Qae = JM((Boe, _1) => {
             var e = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return t ? e.substring(0, t) : e
         },
-        cG = /[a-zа-я0-9][a-zа-я0-9-]*\.[a-zа-я]+$/i,
-        uG = /[a-zа-я0-9][a-zа-я0-9-]+\.[a-zа-я.]{2,6}$/i,
+        cG = /[a-z0-9][a-z0-9-]*\.[a-z]+$/i,
+        uG = /[a-z0-9][a-z0-9-]+\.[a-z.]{2,6}$/i,
         kb = function(t) {
             var e = uG,
                 r = t.split("."),
@@ -14668,7 +14668,7 @@ var Qae = JM((Boe, _1) => {
             directory: "pp5/rapbattle",
             categoryId: "RapBattleGame"
         }, {
-            name: "Купол Хангер",
+            name: "Zeeple Dome",
             tag: "slingshoot",
             wrapper: "marionette",
             isPublic: !0,
@@ -14776,7 +14776,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "DrawfulAnimateGame",
             features: ["moderation"]
         }, {
-            name: "The Wheel of Enormous Proportions",
+            name: "Пельмень Невероятных Масштабов",
             tag: "the-wheel",
             wrapper: "vue",
             isPublic: !0,
@@ -14862,7 +14862,7 @@ var Qae = JM((Boe, _1) => {
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }, {
-            name: "Футбол K.O. 2",
+            name: "Tee K.O. 2",
             tag: "awshirt2",
             wrapper: "vue",
             isPublic: !0,
@@ -14881,7 +14881,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "NopusOpusGame",
             galleryId: "dodo-re-mi"
         }, {
-            name: "ЧиниТекст",
+            name: "FixyText",
             tag: "risky-text",
             wrapper: "vue",
             isPublic: !0,
@@ -14890,7 +14890,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "FixyTextGame",
             galleryId: "fixytext"
         }, {
-            name: "Хронолом",
+            name: "Timejinx",
             tag: "time-trivia",
             wrapper: "vue",
             isPublic: !0,
@@ -14899,7 +14899,7 @@ var Qae = JM((Boe, _1) => {
             categoryId: "TimeTriviaGame",
             galleryId: "timejinx"
         }, {
-            name: "Гипнотизиум",
+            name: "Hypnotorious",
             tag: "us-them",
             wrapper: "vue",
             isPublic: !0,
@@ -15906,10 +15906,10 @@ var Qae = JM((Boe, _1) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
-            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
+            return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -16214,7 +16214,7 @@ var Qae = JM((Boe, _1) => {
                     };
 
                 function m(N) {
-                    if (typeof N != "string" && (N = String(N)), /[^a-zа-я0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
+                    if (typeof N != "string" && (N = String(N)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
                     return N.toLowerCase()
                 }
 
@@ -19769,8 +19769,8 @@ var Qae = JM((Boe, _1) => {
                     stringify: h,
                     parse: m
                 },
-                _ = /^[A-Za-zА-Яа-я][A-Za-zА-Яа-я0-9+-.]*:\/\//,
-                E = /^([a-zа-я][a-zа-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                _ = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+                E = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 T = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 y = new RegExp("^" + T + "+");
 
@@ -20624,10 +20624,10 @@ var Qae = JM((Boe, _1) => {
             return String(e).replace(r, "")
         }
         static input(e) {
-            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF\u0401-\u0451’]/gi, "")
+            return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static username(e) {
-            return e.replace(/[^A-ZА-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026\u0401-\u0451!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -20725,129 +20725,129 @@ var Qae = JM((Boe, _1) => {
         }
     }
     const $4 = {
-            BACK: "Назад",
-            CANCEL: "Отмена",
-            CLOSE: "Закрыть",
-            CONFIRM: "Подтвердить",
-            CREATE: "Создать",
-            DELETE: "Удалить",
-            DONE: "Готово",
-            EDIT: "Редактировать",
-            OK: "Ок",
-            NEXT: "Следующий",
-            NO: "Нет",
-            PLAY: "ИГРАТЬ",
-            PUBLISH: "Опубликовать",
-            REMOVE: "Удалить",
-            RESET: "Сброс",
-            SUBMIT: "Отправить",
-            TRY_AGAIN: "Попробовать снова",
-            UNDO: "Отменить",
-            YES: "Да"
+            BACK: "Back",
+            CANCEL: "Cancel",
+            CLOSE: "Close",
+            CONFIRM: "Confirm",
+            CREATE: "Create",
+            DELETE: "Delete",
+            DONE: "Done",
+            EDIT: "Edit",
+            OK: "OK",
+            NEXT: "Next",
+            NO: "No",
+            PLAY: "Играть",
+            PUBLISH: "Publish",
+            REMOVE: "Remove",
+            RESET: "Reset",
+            SUBMIT: "Submit",
+            TRY_AGAIN: "Try Again",
+            UNDO: "Undo",
+            YES: "Yes"
         },
         D4 = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "подсказки, скрытые на устройствах игроков",
-                VISIBILITY_CONTROLLER_ON: "подсказки, показанные на устройствах игроков",
-                VISIBILITY_SCREEN_OFF: "подсказки, скрытые на игровом экране",
-                VISIBILITY_SCREEN_ON: "подсказки, показанные на игровом экране"
+                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
+                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
+                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
+                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
         k4 = {
-            DISCONNECTED: "Вы были отключены.",
-            DRAWING_NOTHING: "Вы должны что-то нарисовать!",
-            PLAYER_KICKED: "Вы были исключены из игры модератором.",
-            ROOM_DESTROYED: "Спасибо за игру!",
-            ROOM_DISCONNECTED: "Отключено",
-            TEXT_NAUGHTY: "Боюсь, что вы не можете этого написать. Пожалуйста, будьте уважительны к другим игрокам.",
-            TEXT_NOTHING: "Вы не можете ничего ввести!",
-            TITLE: "Ошибка"
+            DISCONNECTED: "You have been disconnected.",
+            DRAWING_NOTHING: "You have to draw something!",
+            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
+            ROOM_DESTROYED: "Thanks for playing!",
+            ROOM_DISCONNECTED: "Disconnected",
+            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
+            TEXT_NOTHING: "You can’t enter nothing!",
+            TITLE: "Error"
         },
         U4 = "LOADING",
         B4 = {
-            JOINED_COUNT: "В игре {count} из {maxPlayers} игроков",
-            PLAYERS_NEEDED: "НУЖЕН ЕЩЁ 1 ИГРОК, ЧТОБЫ НАЧАТЬ | НУЖНО ЕЩЕ {count} ИГРОКОВ, ЧТОБЫ НАЧАТЬ",
-            WAITING_FOR_VIP: "Ждём {name} для начала игры",
-            WAITING_FOR_GAMEPAD: "Ожидайте начала игры",
-            GAME_STARTING: "Игра в процессе",
-            BUTTON_START: "Нажмите для начала игры",
-            BUTTON_CANCEL: "Нажмите чтобы отменить"
+            JOINED_COUNT: "{count} of {maxPlayers} players joined",
+            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
+            WAITING_FOR_VIP: "Waiting for {name} to start the game",
+            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
+            GAME_STARTING: "Game is starting",
+            BUTTON_START: "Press to Start",
+            BUTTON_CANCEL: "Press to Cancel"
         },
         G4 = {
-            GALLERY_LINK: "Посмотреть результаты",
-            PLAY_AGAIN: "Играть снова?",
-            BUTTON_SAME_PLAYERS: "Те же игроки",
-            BUTTON_NEW_PLAYERS: "Новые игроки"
+            GALLERY_LINK: "Visit the Gallery",
+            PLAY_AGAIN: "Play again?",
+            BUTTON_SAME_PLAYERS: "Same Players",
+            BUTTON_NEW_PLAYERS: "New Players"
         },
         F4 = {
-            AND: "И",
-            OR: "ИЛИ"
+            AND: "AND",
+            OR: "OR"
         },
         H4 = {
-            BUTTON_SKIP: "Пропустить",
-            BUTTON_NEXT: "Следующее",
-            BUTTON_DONE: "Поехали!"
+            BUTTON_SKIP: "Skip",
+            BUTTON_NEXT: "Next",
+            BUTTON_DONE: "Let’s Go!"
         },
         W4 = {
-            NAME: "ЗРИТЕЛИ"
+            NAME: "AUDIENCE"
         },
         j4 = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "Показать автора",
-            EPISODES_LOAD: "Загрузка эпизода по id:",
-            EPISODES_MENU: "Меню эпизодов",
-            EPISODES_SELECT: "Или выберите эпизод:",
-            EPISODES_WARNING: "Предупреждение: пользовательский контент не оценивается",
+            EPISODE_VIEW_AUTHOR: "View Author",
+            EPISODES_LOAD: "Load an episode by id:",
+            EPISODES_MENU: "Episodes Menu",
+            EPISODES_SELECT: "Or select an epsiode:",
+            EPISODES_WARNING: "Warning: user generated content is not rated",
             INSTRUCTION: {
-                CREATE_TITLE: "Прежде всего, введите название эпизода, который будет содержать все ваши подсказки, и нажмите кнопку «Создать».",
-                LOAD: "создать или загрузить?",
-                PUBLISH: "опубликовать свой эпизод",
-                TITLE: "назовите свой эпизод",
-                TOGGLE_VISIBILITY: "Нажмите, чтобы показать/скрыть подсказки",
-                WRITE: "напишите свои подсказки"
+                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
+                LOAD: "create or load?",
+                PUBLISH: "publish your episode",
+                TITLE: "name your episode",
+                TOGGLE_VISIBILITY: "tap to show/hide prompts",
+                WRITE: "write your prompts"
             },
             WARNING: {
-                DELETE: "Вы уверены, что хотите удалить этот эпизод?",
-                TOS: "Предоставляя контент, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]",
-                TOS_AGREE: "согласиться и поделиться"
+                DELETE: "Are you sure you want to delete this episode?",
+                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
+                TOS_AGREE: "agree and share"
             },
-            BACK_TO_EPISODES: "назад к эпизодам",
-            BACK_TO_MENU: "назад в меню",
-            CREATE_NEW_EPISODE: "создать новый эпизод",
-            PREVIOUS_EPISODES: "предыдущие эпизоды",
-            PROMPT_ADD: "добавить подсказку",
-            PROMPT_PLACEHOLDER: "введите подсказку",
+            BACK_TO_EPISODES: "back to episodes",
+            BACK_TO_MENU: "back to menu",
+            CREATE_NEW_EPISODE: "create a new episode",
+            PREVIOUS_EPISODES: "previous episodes",
+            PROMPT_ADD: "add prompt",
+            PROMPT_PLACEHOLDER: "enter a prompt",
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "введите название"
+            TITLE_PLACEHOLDER: "enter a title"
         },
         z4 = {
             BROADCASTER: {
-                SUBTEXT: "Вы успешно подключили свою учетную запись к Twitch-расширению Jackbox Audience Kit.",
-                WARNING: "В НАСТРОЙКАХ ИГРЫ ОТКЛЮЧЕНЫ ЗРИТЕЛИ"
+                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
+                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
             },
             RECONNECTED: {
-                TEXT: "ПЕРЕПОДКЛЮЧИТСЯ",
-                SUBTEXT: "Веселитесь!"
+                TEXT: "RECONNECTED",
+                SUBTEXT: "Have fun!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "СОЕДИНЕНИЕ ПРЕРВАНО",
-                    SUBTEXT: "Попытка повторного подключения ({attempt} из 5)"
+                    TEXT: "CONNECTION INTERRUPTED",
+                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
                 },
                 GAME: {
-                    TEXT: "ПРЕРВАНО СОЕДИНЕНИЕ С ИГРОЙ",
-                    SUBTEXT: "Пожалуйста, подождите, пока мы пытаемся восстановить соединение"
+                    TEXT: "GAME CONNECTION INTERRUPTED",
+                    SUBTEXT: "Please wait while we attempt to reconnect"
                 }
             },
             PAUSED: {
-                TEXT: "ИГРА ПРИОСТАНОВЛЕНА",
-                SUBTEXT: "Все, что вы напишете, все равно будет отправлено в игру."
+                TEXT: "THE GAME IS PAUSED",
+                SUBTEXT: "Anything you submit will still be sent to the game."
             }
         },
         q4 = {
-            SHARE: "Поделиться",
-            COPY_TO_CLIPBOARD: "Скопировать"
+            SHARE: "Share",
+            COPY_TO_CLIPBOARD: "Copy to clipboard"
         },
         V4 = {
             ACTION: $4,
@@ -21815,12 +21815,12 @@ var Qae = JM((Boe, _1) => {
                 j1 = "\\u20d0-\\u20ff",
                 Wv = H1 + W1 + j1,
                 jv = "\\u2700-\\u27bf",
-                zv = "a-zа-я\\xdf-\\xf6\\xf8-\\xff",
+                zv = "a-z\\xdf-\\xf6\\xf8-\\xff",
                 z1 = "\\xac\\xb1\\xd7\\xf7",
                 q1 = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 V1 = "\\u2000-\\u206f",
                 Y1 = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                qv = "A-ZА-Я\\xc0-\\xd6\\xd8-\\xde",
+                qv = "A-Z\\xc0-\\xd6\\xd8-\\xde",
                 Vv = "\\ufe0e\\ufe0f",
                 Yv = z1 + q1 + V1 + Y1,
                 id = "['’]",
@@ -21845,8 +21845,8 @@ var Qae = JM((Boe, _1) => {
                 i_ = J1 + "?",
                 s_ = "[" + Vv + "]?",
                 Z1 = "(?:" + e_ + "(?:" + [Zv, ad, od].join("|") + ")" + s_ + i_ + ")*",
-                eC = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-ZА-Я_])",
-                tC = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-zА-Я_])",
+                eC = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
+                tC = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
                 a_ = s_ + i_ + Z1,
                 rC = "(?:" + [X1, ad, od].join("|") + ")" + a_,
                 nC = "(?:" + [Zv + tc + "?", tc, ad, od, K1].join("|") + ")",
@@ -21855,7 +21855,7 @@ var Qae = JM((Boe, _1) => {
                 ld = RegExp(sd + "(?=" + sd + ")|" + nC + a_, "g"),
                 aC = RegExp([ta + "?" + Jv + "+" + r_ + "(?=" + [Kv, ta, "$"].join("|") + ")", Q1 + "+" + n_ + "(?=" + [Kv, ta + t_, "$"].join("|") + ")", ta + "?" + t_ + "+" + r_, ta + "+" + n_, tC, eC, Xv, rC].join("|"), "g"),
                 oC = RegExp("[" + e_ + ec + Wv + Vv + "]"),
-                lC = /[a-z][A-Z]|[A-Z][а-я][А-Я][А-Я]{2}[a-z][а-я]|[0-9][a-zA-Z]|[a-zA-Z][А-Яа-я][А-Яа-я][0-9]|[^a-zA-ZА-Яа-я0-9 ]/,
+                lC = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
                 cC = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 uC = -1,
                 Dt = {};
@@ -27340,7 +27340,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new Bi.Token(Bi.Token.Type.startTag, r, n, e[0])
                 }
                 return new Bi.Token(Bi.Token.Type.endTag, e[1].substr(1, e[1].length - 1))
-            }, t.nameChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;/]", t.valueChars = "[a-zA-ZА-Яа-я0-9\\.\\-_:;#/\\s]", t
+            }, t.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", t.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", t
         }();
     Xf.Tokenizer = dQ;
     (function(t) {
@@ -31701,45 +31701,45 @@ ${e}`
             WAITING: "Waiting for Room"
         },
         one = {
-            ACCEPT_ALL: "Есть!",
+            ACCEPT_ALL: "Понял!",
             CONSENT_MODAL: {
                 ARIA: "Cookie consent form"
             },
-            DESCRIPTION: "Мы используем файлы cookie для улучшения ваших игровых возможностей и анализа посещаемости сайта. Более подробная информация содержится в нашей [pp]Политике конфиденциальности[/pp].",
-            REJECT_ALL: "Отказаться от участия"
+            DESCRIPTION: "Мы используем куки-файлы для улучшения ваших игровых возможностей и анализа посещаемости сайта. Читайте больше в нашей [pp]Политике конфиденциальности[/pp].",
+            REJECT_ALL: "Opt out"
         },
         lne = {
-            UNSUPPORTED_BROWSER: "Эта игра не поддерживается в данном браузере. Посмотрите '?' или HELP, чтобы увидеть список совместимых браузеров.",
-            ROOM_IS_FULL: "Игра заполнена",
+            UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
+            ROOM_IS_FULL: "Комната заполнена",
             ROOM_NOT_FOUND: "Комната не найдена",
             AUDIENCE_IS_FULL: "Зрители заполнены",
-            UNABLE_TO_CONNECT: "Невозможно подключиться к серверу Jackbox Games. Обычно это происходит из-за блокировщиков рекламы или расширений конфиденциальности.",
-            UNABLE_TO_PRELOAD: "Невозможно выполнить предварительную загрузку этого пакета игр",
-            KICKED: "Вы не можете присоединиться, потому что были удалены модератором",
-            REQUIRES_TWITCH_LOGIN: "Для игры требуется вход в Twitch",
-            ROOM_IS_LOCKED: "Игра закрыта",
-            INCORRECT_PASSWORD: "Неправильный пароль",
-            GENERIC: "Ошибка при подключении к игре",
-            FILTER_NAME: "В этой игре включены фильтры ненормативной лексики. Пожалуйста, выберите другое имя."
+            UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
+            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
+            KICKED: "You cannot join because you have been kicked by a moderator",
+            REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
+            ROOM_IS_LOCKED: "Game is locked",
+            INCORRECT_PASSWORD: "Incorrect password",
+            GENERIC: "Error joining this game",
+            FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
         },
         cne = {
             NAME: "ИМЯ",
-            NAME_PLACEHOLDER: "ВВЕДИТЕ СВОЕ ИМЯ",
-            PASSWORD_PLACEHOLDER: "ВВЕДИТЕ 5-ЗНАЧНЫЙ ПАРОЛЬ",
+            NAME_PLACEHOLDER: "ВВЕДИ СВОЁ ИМЯ",
+            PASSWORD_PLACEHOLDER: "ВВЕДИ 5-ЗНАЧНЫЙ ПАРОЛЬ",
             PASSWORD_REQUIRED_TITLE: "Требуется пароль",
-            PASSWORD_REQUIRED_BODY: "Пожалуйста, введите пароль или присоединяйтесь как зритель",
-            PASSWORD_JOIN_AS_PLAYER: "Присоединиться как игрок",
-            PASSWORD_JOIN_AS_AUDIENCE: "Присоединиться к зрителям",
+            PASSWORD_REQUIRED_BODY: "Пожалуйста, введите пароль или присоединитесь как зритель",
+            PASSWORD_JOIN_AS_PLAYER: "Зайти как игрок",
+            PASSWORD_JOIN_AS_AUDIENCE: "Зайти как зритель",
             ROOM_CODE: "КОД КОМНАТЫ",
-            ROOM_CODE_PLACEHOLDER: "ВВЕДИТЕ 4-БУКВЕННЫЙ КОД"
+            ROOM_CODE_PLACEHOLDER: "ВВЕДИ 4-БУКВЕННЫЙ КОД"
         },
         une = "Link to Jackbox Games Homepage",
         fne = {
             APPEARANCE: "ТЕМА",
-            DARK: "темная",
+            DARK: "dark",
             HELP: "ПОМОЩЬ",
             TWITCH: "TWITCH",
-            LIGHT: "светлая",
+            LIGHT: "light",
             LOGOUT: "ВЫЙТИ",
             MERCH: "МЕРЧ",
             PAST_GAMES: "ПРОШЛЫЕ ИГРЫ",
@@ -31748,47 +31748,47 @@ ${e}`
         },
         dne = {
             CALL_TO_ACTION: {
-                SHOP: "ПОСМОТРЕТЬ ИГРУ",
-                VIEW: "ПОСМОТРЕТЬ ИГРУ"
+                SHOP: "ПОСМОТРЕТЬ ИГРУ & МАГАЗИН",
+                VIEW: "ПОСМОТРЕТЬ ЭТУ ИГРУ"
             },
-            NEW: "НОВЫЙ",
+            NEW: "НОВОЕ",
             PLAYED_ON: "СЫГРАНО",
             REMOVE: {
                 CONFIRM: "Вы уверены?",
-                DESCRIPTION: `Это позволит навсегда удалить эту игру
-                из списка прошлых игр.`,
+                DESCRIPTION: `This will permanently remove this game
+from your past games list.`,
                 MANAGE: "Удалить игру?",
                 TITLE: "Вы уверены?"
             }
         },
         pne = {
-            EMPTY: "Пока нет прошлых игр",
-            MANAGE: "РУКОВОДСТВО",
+            EMPTY: "Прошедших игр нет",
+            MANAGE: "УПРАВЛЯТЬ",
             TITLE: "ВАШИ ПРОШЛЫЕ ИГРЫ"
         },
         hne = {
-            TITLE: "ПОСЛЕДНИЕ ИГРЫ",
+            TITLE: "ПРОШЛЫЕ ИГРЫ",
             VIEW_ALL: {
                 BUTTON: "ПОСМОТРЕТЬ ВСЕ",
-                LINK: "ПРОСМОТРЕТЬ ВСЕ ПРОШЛЫЕ ИГРЫ"
+                LINK: "ПОСМОТРЕТЬ ВСЕ ПРОШЛЫЕ ИГРЫ"
             }
         },
         mne = {
-            GAME_FULL: "Игра заполнена",
-            GAME_STARTED: "Игра началась",
+            GAME_FULL: "Комната заполена",
+            GAME_STARTED: "Игра уже началась",
             ROOM_NOT_FOUND: "Комната не найдена"
         },
         gne = {
-            GAME_FULL: "ИГРА ЗАПОЛНЕНА",
+            GAME_FULL: "КОМНАТА ЗАПОЛЕНА",
             GAME_STARTED: "ИГРА НАЧАЛАСЬ",
-            JOIN_AUDIENCE: "ПРИСОЕДИНИТЬСЯ К ЗРИТЕЛЯМ",
-            RECONNECT: "ПОВТОРИТЬ",
-            TWITCH_LOGIN: "ВХОД В СИСТЕМУ С ПОМОЩЬЮ TWITCH"
+            JOIN_AUDIENCE: "ЗАЙТИ КАК ЗРИТЕЛЬ",
+            RECONNECT: "ПЕРЕЗАЙТИ",
+            TWITCH_LOGIN: "ВХОД С TWITCH"
         },
         vne = {
-            CAMERA: "[b]HEADS UP:[/b] Мы не обнаруживаем камеру, но вы все еще можете играть в игру без фотографии. Если это кажется неправильным, попробуйте подключиться через другой браузер.",
-            STYLE: "[b]HEADS UP:[/b] Ваш браузер, похоже, немного устарел и будет иметь некоторые проблемы с отображением этой игры.",
-            TOS: "Нажимая {submit}, вы соглашаетесь с нашими [tos]Условиями предоставления услуг[/tos]."
+            CAMERA: "[b]HEADS UP:[/b] We’re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
+            STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
+            TOS: "Нажимая {submit}, вы соглашаетесь с нашими [tos]Условиями обслуживания[/tos]"
         },
         _ne = {
             BRANCH: ane,
