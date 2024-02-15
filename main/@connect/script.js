@@ -14518,7 +14518,7 @@ var Qae = JM((Boe, _1) => {
             isPublic: !0,
             directory: "standalone/acquisitions-inc"
         }, {
-            name: "You Don't Know Jack 2015",
+            name: "Ты не знаешь Санчоуса: 2015",
             tag: "ydkj2015",
             wrapper: "marionette",
             isPublic: !0,
