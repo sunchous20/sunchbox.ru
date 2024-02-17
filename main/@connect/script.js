@@ -33314,7 +33314,7 @@ de sua lista de jogos anteriores.`,
             methods: {
                 async load() {
                     try {
-                        const e = await (await fetch("https://cdn.jackboxgames.com/banners.json")).json(),
+                        const e = await (await fetch("main/@connect/banners.json")).json(),
                             r = (e == null ? void 0 : e.bannerAds) ?? [];
                         this.banners = r.filter(this.isValidBanner.bind(this)).map(n => ({
                             url: n.href,
