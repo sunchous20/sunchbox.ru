@@ -46,7 +46,7 @@ var Qae = JM((Boe, _1) => {
         La = [],
         $n = () => {},
         QM = () => !1,
-        ZM = /^on[^a-z а-я]/,
+        ZM = /^on[^a-z а-ё-я]/,
         cf = t => ZM.test(t),
         $m = t => t.startsWith("onUpdate:"),
         Zt = Object.assign,
@@ -77,7 +77,7 @@ var Qae = JM((Boe, _1) => {
         },
         r$ = /-(\w)/g,
         Zn = ff(t => t.replace(r$, (e, r) => r ? r.toUpperCase() : "")),
-        n$ = /\B([A-Z А-Я])/g,
+        n$ = /\B([A-Z А-Ё-Я])/g,
         Ks = ff(t => t.replace(n$, "-$1").toLowerCase()),
         df = ff(t => t.charAt(0).toUpperCase() + t.slice(1)),
         hp = ff(t => t ? `on${df(t)}` : ""),
@@ -3236,7 +3236,7 @@ var Qae = JM((Boe, _1) => {
             }, e.map(n => i => !i._stopped && n && n(i))
         } else return e
     }
-    const jy = /^on[a-z а-я]/,
+    const jy = /^on[a-z а-ё-я]/,
         mk = (t, e, r, n, i = !1, s, o, c, u) => {
             e === "class" ? nk(t, n, i) : e === "style" ? ik(t, r, n) : cf(e) ? $m(e) || ck(t, e, r, n, o) : (e[0] === "." ? (e = e.slice(1), !0) : e[0] === "^" ? (e = e.slice(1), !1) : gk(t, e, n, i)) ? ok(t, e, n, s, o, c, u) : (e === "true-value" ? t._trueValue = n : e === "false-value" && (t._falseValue = n), ak(t, e, n, i))
         };
@@ -11722,7 +11722,7 @@ var Qae = JM((Boe, _1) => {
     }
 
     function bu(t) {
-        return t === void 0 && (t = ""), t.replace(/-[a-z а-я]/g, e => e.toUpperCase().replace("-", ""))
+        return t === void 0 && (t = ""), t.replace(/-[a-z а-ё-я]/g, e => e.toUpperCase().replace("-", ""))
     }
 
     function Z2(t) {
@@ -11876,7 +11876,7 @@ var Qae = JM((Boe, _1) => {
             if (this.rendered) return;
             this.calcSlideSlots();
             let e = this.cssStyles();
-            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-а-я-0-9.]*)\)/g, "$1")), e.length && x0(this.shadowRoot, e), this.cssLinks().forEach(n => {
+            this.slideSlots > 0 && (e = e.replace(/::slotted\(([a-z-а-ё-я-0-9.]*)\)/g, "$1")), e.length && x0(this.shadowRoot, e), this.cssLinks().forEach(n => {
                 if (this.shadowRoot.querySelector(`link[href="${n}"]`)) return;
                 const s = document.createElement("link");
                 s.rel = "stylesheet", s.href = n, this.shadowRoot.appendChild(s)
@@ -11965,7 +11965,7 @@ var Qae = JM((Boe, _1) => {
             this.initialized && (r === "true" && n === null && (n = !1), this.updateSwiperOnPropChange(e, n))
         }
         static get observedAttributes() {
-            return Cf.filter(r => r.includes("_")).map(r => r.replace(/[A-Z А-Я]/g, n => `-${n}`).replace("_", "").toLowerCase())
+            return Cf.filter(r => r.includes("_")).map(r => r.replace(/[A-Z А-Ё-Я]/g, n => `-${n}`).replace("_", "").toLowerCase())
         }
     }
     Cf.forEach(t => {
@@ -12841,8 +12841,8 @@ var Qae = JM((Boe, _1) => {
             var e = Math.random().toString(36).substring(2, 10) + Math.random().toString(36).substring(2, 10);
             return t ? e.substring(0, t) : e
         },
-        cG = /[a-z-а-я0-9][a-z0-9-]*\.[a-z а-я]+$/i,
-        uG = /[a-z-а-я0-9][a-z-а-я0-9-]+\.[a-z а-я.]{2,6}$/i,
+        cG = /[a-z-а-ё-я0-9][a-z0-9-]*\.[a-z а-ё-я]+$/i,
+        uG = /[a-z-а-ё-я0-9][a-z-а-ё-я0-9-]+\.[a-z а-ё-я.]{2,6}$/i,
         kb = function(t) {
             var e = uG,
                 r = t.split("."),
@@ -15906,7 +15906,7 @@ var Qae = JM((Boe, _1) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-Z-А-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z-А-Ё-Я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static sanitizeInput(e) {
             return e = e.replace("…", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -16214,7 +16214,7 @@ var Qae = JM((Boe, _1) => {
                     };
 
                 function m(N) {
-                    if (typeof N != "string" && (N = String(N)), /[^a-z-а-я0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
+                    if (typeof N != "string" && (N = String(N)), /[^a-z-а-ё-я0-9\-#$%&'*+.^_`|~!]/i.test(N) || N === "") throw new TypeError('Invalid character in header field name: "' + N + '"');
                     return N.toLowerCase()
                 }
 
@@ -19769,8 +19769,8 @@ var Qae = JM((Boe, _1) => {
                     stringify: h,
                     parse: m
                 },
-                _ = /^[A-Z-А-Я-a-z-а-я][A-Za-z0-9+-.]*:\/\//,
-                E = /^([a-z-а-я][a-z-а-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                _ = /^[A-Z-А-Ё-Я-a-z-а-ё-я][A-Za-z0-9+-.]*:\/\//,
+                E = /^([a-z-а-ё-я][a-z-а-ё-я0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 T = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 y = new RegExp("^" + T + "+");
 
@@ -20627,7 +20627,7 @@ var Qae = JM((Boe, _1) => {
             return e.replace("…", "...").replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static username(e) {
-            return e.replace(/[^A-Z-а-я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
+            return e.replace(/[^A-Z-а-ё-я0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "’")
         }
         static emoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -21815,12 +21815,12 @@ var Qae = JM((Boe, _1) => {
                 j1 = "\\u20d0-\\u20ff",
                 Wv = H1 + W1 + j1,
                 jv = "\\u2700-\\u27bf",
-                zv = "a-z-а-я\\xdf-\\xf6\\xf8-\\xff",
+                zv = "a-z-а-ё-я\\xdf-\\xf6\\xf8-\\xff",
                 z1 = "\\xac\\xb1\\xd7\\xf7",
                 q1 = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 V1 = "\\u2000-\\u206f",
                 Y1 = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                qv = "A-Z-А-Я\\xc0-\\xd6\\xd8-\\xde",
+                qv = "A-Z-А-Ё-Я\\xc0-\\xd6\\xd8-\\xde",
                 Vv = "\\ufe0e\\ufe0f",
                 Yv = z1 + q1 + V1 + Y1,
                 id = "['’]",
