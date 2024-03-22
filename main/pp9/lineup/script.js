@@ -28077,17 +28077,17 @@ ${t}`
             PLACED_IN_TRASH: "{player} placed {text} in the trash"
         },
         Ase = {
-            LEFT: "left",
-            RIGHT: "right",
+            LEFT: "лево",
+            RIGHT: "право",
             SLAM: "slam",
-            FEED: "feed",
-            YOU_UP_NEXT: "you are[line]up next[/line]",
-            IS_UP_NEXT: "up next[line]{name}[/line]",
-            OTHER_TEAM: "up now[line]{team}[/line]",
-            TOO_LATE: "this round is already in progress",
-            UP_NEXT: "up next",
-            QUIXORTING: "quixorting",
-            FINAL: "final",
+            FEED: "покормить",
+            YOU_UP_NEXT: "ты[line]следующий[/line]",
+            IS_UP_NEXT: "следующий[line]{name}[/line]",
+            OTHER_TEAM: "сейчас сортирует[line]{team}[/line]",
+            TOO_LATE: "этот раунд уже идёт",
+            UP_NEXT: "следующий",
+            QUIXORTING: "сортировка",
+            FINAL: "финал",
             MUTE: "mute",
             UNMUTE: "unmute",
             TRASH: "trash",
@@ -28103,8 +28103,8 @@ ${t}`
             LAMPOON_TITLE: "Feed the Jester[i](and keep your device awake)[/i]",
             HECTOR_ACTION: "drop",
             HECTOR_TITLE: "Drop a Science Pellet[i](and keep your device awake)[/i]",
-            TRASH_ACTION: "feed",
-            TRASH_TITLE: "Feed the Trash Monster[i](and keep your device awake)[/i]"
+            TRASH_ACTION: "кормить",
+            TRASH_TITLE: "Корми мусорного монстра[i](и оставляй своё устройство включённым)[/i]"
         },
         Ise = {
             BOGO_TITLE: "bogo-a-go-go",
@@ -28117,8 +28117,8 @@ ${t}`
             SELECTION_TITLE: "super selection"
         },
         Cse = {
-            GET_READY: "GET READY",
-            TAP_TO_TRASH: "TAP TO TRASH"
+            GET_READY: "ПРИГОТОВЬСЯ",
+            TAP_TO_TRASH: "ЖМИ, ЧТОБЫ ПОКОРМИТЬ"
         },
         $se = {
             AVATAR_BEE: "a bee like robot shaped like a pill with rapidly flapping wings and a drill bit for a tail",
@@ -28150,12 +28150,12 @@ ${t}`
             CRYSTALIZED: "Blocks not in a streak become crystallized!"
         },
         Nse = {
-            THANKS: "Thanks for playing!",
+            THANKS: "Спасибо за игру!",
             NOT_READY: "The gallery for this Quixort game is not quite ready :(",
             PAGE_TITLE: "Quixort Gallery"
         },
-        kse = "trash",
-        Lse = "wait",
+        kse = "мусор",
+        Lse = "ожидание",
         Pse = {
             ARIA: Sse,
             FALLING: Ase,
