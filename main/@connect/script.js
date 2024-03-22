@@ -14854,7 +14854,7 @@ var Qae = JM((Boe, _1) => {
             features: ["moderation", "kicking"],
             categoryId: "RangeGameGame"
         }, {
-            name: "Quixort",
+            name: "Скортисорт",
             tag: "lineup",
             wrapper: "vue",
             isPublic: !0,
