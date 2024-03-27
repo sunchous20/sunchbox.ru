@@ -12943,11 +12943,11 @@ ${r.message}`,
             }
         },
         g6 = {
-            DISCONNECTED: "You have been disconnected.",
+            DISCONNECTED: "Вы были отключены.",
             DRAWING_NOTHING: "You have to draw something!",
             PLAYER_KICKED: "You have been kicked from the game by a moderator.",
             ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
+            ROOM_DISCONNECTED: "Отключено",
             TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
             TEXT_NOTHING: "You can’t enter nothing!",
             TITLE: "Error"
@@ -12978,7 +12978,7 @@ ${r.message}`,
             BUTTON_DONE: "Let’s Go!"
         },
         E6 = {
-            NAME: "AUDIENCE"
+            NAME: "ЗРИТЕЛИ"
         },
         b6 = {
             EPISODE_REPORT: "Report Episode",
@@ -28079,7 +28079,7 @@ ${t}`
         Ase = {
             LEFT: "лево",
             RIGHT: "право",
-            SLAM: "slam",
+            SLAM: "бросить",
             FEED: "покормить",
             YOU_UP_NEXT: "ты[line]следующий[/line]",
             IS_UP_NEXT: "следующий[line]{name}[/line]",
