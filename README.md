@@ -1,2 +1,2 @@
 # sunchbox.ru
-my domen for playing jackbox.
+my domain for playing jackbox.
